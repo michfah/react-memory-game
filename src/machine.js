@@ -1,6 +1,6 @@
 import { createMachine , assign} from 'xstate';
 
-const ticTactToeMachine = createMachine({
+const memoryMachine = createMachine({
   id: 'memoryGame',
   initial: 'onGame',
   context: {
@@ -62,4 +62,4 @@ const ticTactToeMachine = createMachine({
   }
 });
 
-export { ticTactToeMachine };
+export { memoryMachine };
