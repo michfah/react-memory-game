@@ -5,7 +5,7 @@ const memoryMachine = createMachine({
   initial: 'onGame',
   context: {
     turnCounter: 0,
-    sourceCard: Array(9).fill(null)
+    sourceCard: Array(12).fill(null)
   },
   on: {
     newGame:{
@@ -57,7 +57,7 @@ const memoryMachine = createMachine({
     },
     newGame:assign({
       turnCounter:0,
-      sourceCard: Array(9).fill(null)
+      sourceCard: Array(12).fill(null)
     })
   }
 });
